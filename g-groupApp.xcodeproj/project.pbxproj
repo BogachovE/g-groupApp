@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8DBAC6F86C6EE00D081DB3E7 /* Pods_g_groupApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CFC015DB0A6930DEEED33D /* Pods_g_groupApp.framework */; };
 		DD17F39F1E6460F500844AFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD17F39E1E6460F500844AFA /* AppDelegate.swift */; };
-		DD17F3A11E6460F500844AFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD17F3A01E6460F500844AFA /* ViewController.swift */; };
+		DD17F3A11E6460F500844AFA /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD17F3A01E6460F500844AFA /* MainController.swift */; };
 		DD17F3A41E6460F500844AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD17F3A21E6460F500844AFA /* Main.storyboard */; };
 		DD17F3A61E6460F500844AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD17F3A51E6460F500844AFA /* Assets.xcassets */; };
 		DD17F3A91E6460F500844AFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD17F3A71E6460F500844AFA /* LaunchScreen.storyboard */; };
+		DD9DC3421E66E7F5005332BD /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DC3411E66E7F5005332BD /* MainCollectionViewCell.swift */; };
+		DD9DC34D1E672D58005332BD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DC34C1E672D58005332BD /* CardView.swift */; };
+		DDCD69E51E6738FC002352F9 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD69E41E6738FC002352F9 /* MaterialButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62CFC015DB0A6930DEEED33D /* Pods_g_groupApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_g_groupApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD17F39B1E6460F500844AFA /* g-groupApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "g-groupApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD17F39E1E6460F500844AFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD17F3A01E6460F500844AFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD17F3A01E6460F500844AFA /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		DD17F3A31E6460F500844AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD17F3A51E6460F500844AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD17F3A81E6460F500844AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD17F3AA1E6460F500844AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9DC3411E66E7F5005332BD /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		DD9DC34C1E672D58005332BD /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DDCD69E41E6738FC002352F9 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		E31DF8E7713EFEF1C5BD4B10 /* Pods-g-groupApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-g-groupApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-g-groupApp/Pods-g-groupApp.debug.xcconfig"; sourceTree = "<group>"; };
+		FD21058EB03AA69830929708 /* Pods-g-groupApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-g-groupApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-g-groupApp/Pods-g-groupApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DBAC6F86C6EE00D081DB3E7 /* Pods_g_groupApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CA812ADEC91F4E8A129BD76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62CFC015DB0A6930DEEED33D /* Pods_g_groupApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E288694A6C9F65E04C90BD8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E31DF8E7713EFEF1C5BD4B10 /* Pods-g-groupApp.debug.xcconfig */,
+				FD21058EB03AA69830929708 /* Pods-g-groupApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DD17F3921E6460F400844AFA = {
 			isa = PBXGroup;
 			children = (
 				DD17F39D1E6460F500844AFA /* g-groupApp */,
 				DD17F39C1E6460F500844AFA /* Products */,
+				6E288694A6C9F65E04C90BD8 /* Pods */,
+				5CA812ADEC91F4E8A129BD76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +84,25 @@
 		DD17F39D1E6460F500844AFA /* g-groupApp */ = {
 			isa = PBXGroup;
 			children = (
+				DD9DC3401E66E7BC005332BD /* View */,
 				DD17F39E1E6460F500844AFA /* AppDelegate.swift */,
-				DD17F3A01E6460F500844AFA /* ViewController.swift */,
-				DD17F3A21E6460F500844AFA /* Main.storyboard */,
+				DD17F3A01E6460F500844AFA /* MainController.swift */,
 				DD17F3A51E6460F500844AFA /* Assets.xcassets */,
-				DD17F3A71E6460F500844AFA /* LaunchScreen.storyboard */,
 				DD17F3AA1E6460F500844AFA /* Info.plist */,
 			);
 			path = "g-groupApp";
+			sourceTree = "<group>";
+		};
+		DD9DC3401E66E7BC005332BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDCD69E41E6738FC002352F9 /* MaterialButton.swift */,
+				DD9DC34C1E672D58005332BD /* CardView.swift */,
+				DD17F3A21E6460F500844AFA /* Main.storyboard */,
+				DD17F3A71E6460F500844AFA /* LaunchScreen.storyboard */,
+				DD9DC3411E66E7F5005332BD /* MainCollectionViewCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD17F3AD1E6460F500844AFA /* Build configuration list for PBXNativeTarget "g-groupApp" */;
 			buildPhases = (
+				FEB8F152EE94DFF4935706B0 /* [CP] Check Pods Manifest.lock */,
 				DD17F3971E6460F400844AFA /* Sources */,
 				DD17F3981E6460F400844AFA /* Frameworks */,
 				DD17F3991E6460F400844AFA /* Resources */,
+				BCEF31840B7789E9D557014F /* [CP] Embed Pods Frameworks */,
+				6EE7FDE9D03BCC10A6C7403E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +175,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6EE7FDE9D03BCC10A6C7403E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-g-groupApp/Pods-g-groupApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCEF31840B7789E9D557014F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-g-groupApp/Pods-g-groupApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEB8F152EE94DFF4935706B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD17F3971E6460F400844AFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD17F3A11E6460F500844AFA /* ViewController.swift in Sources */,
+				DD17F3A11E6460F500844AFA /* MainController.swift in Sources */,
+				DD9DC3421E66E7F5005332BD /* MainCollectionViewCell.swift in Sources */,
+				DD9DC34D1E672D58005332BD /* CardView.swift in Sources */,
 				DD17F39F1E6460F500844AFA /* AppDelegate.swift in Sources */,
+				DDCD69E51E6738FC002352F9 /* MaterialButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +351,7 @@
 		};
 		DD17F3AE1E6460F500844AFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E31DF8E7713EFEF1C5BD4B10 /* Pods-g-groupApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "g-groupApp/Info.plist";
@@ -268,6 +364,7 @@
 		};
 		DD17F3AF1E6460F500844AFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD21058EB03AA69830929708 /* Pods-g-groupApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "g-groupApp/Info.plist";
@@ -297,6 +394,7 @@
 				DD17F3AF1E6460F500844AFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

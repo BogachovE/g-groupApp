@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +20,56 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfX-pA-oYj">
+                                <rect key="frame" x="0.0" y="595" width="375" height="72"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.78823529410000004" blue="0.015686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="E2M-XC-ojy"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какой - то слоган" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSt-Jq-vyx">
+                                <rect key="frame" x="78.5" y="616.5" width="219" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKw-0x-9Xb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="7ot-RX-HSU"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cropped-logo-white-compact" translatesAutoresizingMaskIntoConstraints="NO" id="b2k-GD-0U9">
+                                <rect key="frame" x="55.5" y="160" width="264" height="264"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="264" id="hus-Qd-UfF"/>
+                                    <constraint firstAttribute="width" constant="264" id="ldL-r0-zBr"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="iSt-Jq-vyx" firstAttribute="centerX" secondItem="hfX-pA-oYj" secondAttribute="centerX" id="DkT-8T-YCE"/>
+                            <constraint firstItem="b2k-GD-0U9" firstAttribute="top" secondItem="lKw-0x-9Xb" secondAttribute="bottom" constant="136" id="G2j-9e-WvO"/>
+                            <constraint firstItem="hfX-pA-oYj" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="JiA-2b-p0G"/>
+                            <constraint firstItem="lKw-0x-9Xb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="OmM-nC-A8b"/>
+                            <constraint firstItem="lKw-0x-9Xb" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="QT1-Do-yYg"/>
+                            <constraint firstAttribute="trailing" secondItem="lKw-0x-9Xb" secondAttribute="trailing" id="R2g-6s-ziK"/>
+                            <constraint firstItem="iSt-Jq-vyx" firstAttribute="centerY" secondItem="hfX-pA-oYj" secondAttribute="centerY" id="fwn-dw-buE"/>
+                            <constraint firstAttribute="trailing" secondItem="hfX-pA-oYj" secondAttribute="trailing" id="uwe-4m-Dch"/>
+                            <constraint firstItem="b2k-GD-0U9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="y8r-FZ-VgP"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="hfX-pA-oYj" secondAttribute="bottom" id="yFU-mA-McA"/>
+                        </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cropped-logo-white-compact" width="512" height="512"/>
+    </resources>
 </document>
