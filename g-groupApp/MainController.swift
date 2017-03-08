@@ -18,18 +18,12 @@ class MainController: UIViewController,UICollectionViewDelegate, UICollectionVie
    open override func viewDidLoad() {
         super.viewDidLoad()
         eventCollectionView.delegate = self
-       
+        }
+   
         
-        
-    }
-    
     //collection view
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MainCollectionViewCell
-        
-        
-          
-        
         cell.eventImage.imageView?.image = #imageLiteral(resourceName: "photo_actia_exemple")
                 return cell
     }

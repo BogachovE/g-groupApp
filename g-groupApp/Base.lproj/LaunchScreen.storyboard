@@ -40,7 +40,7 @@
                                     <constraint firstAttribute="height" constant="24" id="7ot-RX-HSU"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cropped-logo-white-compact" translatesAutoresizingMaskIntoConstraints="NO" id="b2k-GD-0U9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_big" translatesAutoresizingMaskIntoConstraints="NO" id="b2k-GD-0U9">
                                 <rect key="frame" x="55.5" y="160" width="264" height="264"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="264" id="hus-Qd-UfF"/>
@@ -70,6 +70,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cropped-logo-white-compact" width="512" height="512"/>
+        <image name="logo_big" width="256" height="240"/>
     </resources>
 </document>
