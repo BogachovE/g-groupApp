@@ -46,10 +46,13 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func underlined(label: MKLabel){
         let borderBottom = CALayer()
-        let borderWidth = CGFloat(2.0)
+        let borderWidth = CGFloat(3.0)
         
         borderBottom.borderColor = UIColor(red:0.99, green:0.79, blue:0.02, alpha:1.0).cgColor
-        borderBottom.frame = CGRect(x: 0, y: label.frame.height - 1.0, width: label.frame.width , height: label.frame.height - 1.0)
+        borderBottom.frame = CGRect(x: 0,
+                                    y: label.frame.height - 2.0,
+                                    width: label.frame.width + 3.0,
+                                    height: label.frame.height )
         borderBottom.borderWidth = borderWidth
         
         label.layer.addSublayer(borderBottom)
@@ -70,7 +73,8 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
      func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "filterCell", for: indexPath) as! MenuFilterCollectionViewCell
         cell.filterLabel.text = filterArray[indexPath.row]
-        cell.backgroundColor = UIColor.white
+        underlined(label: cell.filterLabel)
+        deunderlined(label: cell.filterLabel)
         if(indexPath.row == 0){
         underlined(label: cell.filterLabel)
         }

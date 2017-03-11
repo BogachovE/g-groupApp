@@ -15,12 +15,14 @@
 		DD17F3A61E6460F500844AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD17F3A51E6460F500844AFA /* Assets.xcassets */; };
 		DD17F3A91E6460F500844AFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD17F3A71E6460F500844AFA /* LaunchScreen.storyboard */; };
 		DD5C60691E69782E004CAAD5 /* StoreCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C60681E69782E004CAAD5 /* StoreCollectionViewController.swift */; };
+		DD82935A1E7151C90041806C /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8293591E7151C90041806C /* LeftViewController.swift */; };
 		DD9DC3421E66E7F5005332BD /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DC3411E66E7F5005332BD /* MainCollectionViewCell.swift */; };
 		DD9ED0E31E6EF012002239D1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9ED0E21E6EF012002239D1 /* MenuViewController.swift */; };
 		DD9ED0E51E6EF110002239D1 /* MenuFilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9ED0E41E6EF110002239D1 /* MenuFilterCollectionViewCell.swift */; };
 		DDAAF5B71E697C9700EEA1C3 /* StoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAF5B61E697C9700EEA1C3 /* StoreCollectionViewCell.swift */; };
 		DDAAF5B91E69D79A00EEA1C3 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAF5B81E69D79A00EEA1C3 /* EventViewController.swift */; };
 		DDAAF5BB1E6B0ED600EEA1C3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAF5BA1E6B0ED600EEA1C3 /* LoginViewController.swift */; };
+		DDB26D4A1E7190800074B055 /* AppNavigationDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB26D491E7190800074B055 /* AppNavigationDrawerController.swift */; };
 		DDCD69E51E6738FC002352F9 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD69E41E6738FC002352F9 /* MaterialButton.swift */; };
 		DDCEB6501E6D986A009D887F /* AktivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCEB64F1E6D986A009D887F /* AktivationViewController.swift */; };
 		DDCEB6521E6D98A1009D887F /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCEB6511E6D98A1009D887F /* RegistrationViewController.swift */; };
@@ -38,12 +40,14 @@
 		DD17F3A81E6460F500844AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD17F3AA1E6460F500844AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD5C60681E69782E004CAAD5 /* StoreCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreCollectionViewController.swift; sourceTree = "<group>"; };
+		DD8293591E7151C90041806C /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		DD9DC3411E66E7F5005332BD /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		DD9ED0E21E6EF012002239D1 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		DD9ED0E41E6EF110002239D1 /* MenuFilterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuFilterCollectionViewCell.swift; sourceTree = "<group>"; };
 		DDAAF5B61E697C9700EEA1C3 /* StoreCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreCollectionViewCell.swift; sourceTree = "<group>"; };
 		DDAAF5B81E69D79A00EEA1C3 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		DDAAF5BA1E6B0ED600EEA1C3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DDB26D491E7190800074B055 /* AppNavigationDrawerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationDrawerController.swift; sourceTree = "<group>"; };
 		DDCD69E41E6738FC002352F9 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		DDCEB64F1E6D986A009D887F /* AktivationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AktivationViewController.swift; sourceTree = "<group>"; };
 		DDCEB6511E6D98A1009D887F /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 				DD17F39E1E6460F500844AFA /* AppDelegate.swift */,
 				DD17F3A51E6460F500844AFA /* Assets.xcassets */,
 				DD17F3AA1E6460F500844AFA /* Info.plist */,
+				DDB26D491E7190800074B055 /* AppNavigationDrawerController.swift */,
 			);
 			path = "g-groupApp";
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 				DDCEB6511E6D98A1009D887F /* RegistrationViewController.swift */,
 				DDCEB6531E6DA1E0009D887F /* TransaktionViewController.swift */,
 				DD9ED0E21E6EF012002239D1 /* MenuViewController.swift */,
+				DD8293591E7151C90041806C /* LeftViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -266,10 +272,12 @@
 				DDAAF5BB1E6B0ED600EEA1C3 /* LoginViewController.swift in Sources */,
 				DD9ED0E51E6EF110002239D1 /* MenuFilterCollectionViewCell.swift in Sources */,
 				DDCEB6501E6D986A009D887F /* AktivationViewController.swift in Sources */,
+				DD82935A1E7151C90041806C /* LeftViewController.swift in Sources */,
 				DD0C770C1E6F153E0002CA02 /* FoodTableViewCell.swift in Sources */,
 				DDAAF5B71E697C9700EEA1C3 /* StoreCollectionViewCell.swift in Sources */,
 				DDCEB6541E6DA1E0009D887F /* TransaktionViewController.swift in Sources */,
 				DD17F3A11E6460F500844AFA /* MainController.swift in Sources */,
+				DDB26D4A1E7190800074B055 /* AppNavigationDrawerController.swift in Sources */,
 				DDCEB6521E6D98A1009D887F /* RegistrationViewController.swift in Sources */,
 				DD9DC3421E66E7F5005332BD /* MainCollectionViewCell.swift in Sources */,
 				DD9ED0E31E6EF012002239D1 /* MenuViewController.swift in Sources */,

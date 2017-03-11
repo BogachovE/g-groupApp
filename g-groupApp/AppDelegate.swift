@@ -7,15 +7,41 @@
 //
 
 import UIKit
+import Material
+
+extension UIStoryboard {
+    class func viewController(identifier: String) -> UIViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: identifier)
+    }
+}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+   
+    
+    lazy var rootViewController: MainController = {
+        return UIStoryboard.viewController(identifier: "MainController") as! MainController
+    }()
+    
+    lazy var leftViewController: LeftViewController = {
+        return UIStoryboard.viewController(identifier: "LeftViewController") as! LeftViewController
+    }()
+    
+    
+
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: Screen.bounds)
+        window!.rootViewController = AppNavigationDrawerController(rootViewController: rootViewController,
+                                                                   leftViewController: leftViewController
+                                                                  )
+        window!.makeKeyAndVisible()
+
+        
         return true
     }
 

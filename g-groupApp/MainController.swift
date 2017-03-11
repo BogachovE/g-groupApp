@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Material
 
 
 class MainController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
@@ -18,9 +19,9 @@ class MainController: UIViewController,UICollectionViewDelegate, UICollectionVie
    open override func viewDidLoad() {
         super.viewDidLoad()
         eventCollectionView.delegate = self
-        }
+          }
    
-        
+    
     //collection view
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MainCollectionViewCell
@@ -44,6 +45,13 @@ class MainController: UIViewController,UICollectionViewDelegate, UICollectionVie
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //Actions
+    @IBAction func slideButtonPressed(_ sender: Any) {
+   
+    navigationDrawerController?.toggleLeftView()
+    }
+    
 
 
 }
