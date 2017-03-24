@@ -40,15 +40,15 @@
                                     <constraint firstAttribute="height" constant="24" id="7ot-RX-HSU"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_big" translatesAutoresizingMaskIntoConstraints="NO" id="b2k-GD-0U9">
-                                <rect key="frame" x="55.5" y="160" width="264" height="264"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_big_yelow_white" translatesAutoresizingMaskIntoConstraints="NO" id="b2k-GD-0U9">
+                                <rect key="frame" x="55" y="160" width="264" height="264"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="264" id="hus-Qd-UfF"/>
                                     <constraint firstAttribute="width" constant="264" id="ldL-r0-zBr"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="iSt-Jq-vyx" firstAttribute="centerX" secondItem="hfX-pA-oYj" secondAttribute="centerX" id="DkT-8T-YCE"/>
                             <constraint firstItem="b2k-GD-0U9" firstAttribute="top" secondItem="lKw-0x-9Xb" secondAttribute="bottom" constant="136" id="G2j-9e-WvO"/>
@@ -70,6 +70,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo_big" width="256" height="240"/>
+        <image name="logo_big_yelow_white" width="256" height="240"/>
     </resources>
 </document>

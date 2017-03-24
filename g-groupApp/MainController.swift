@@ -15,22 +15,36 @@ class MainController: UIViewController,UICollectionViewDelegate, UICollectionVie
     @IBOutlet weak var slideShow: UIButton!
     @IBOutlet weak var topBar: UIView!
     @IBOutlet weak var eventCollectionView: UICollectionView!
+    
+    var photoArray: [UIImage] = []
 
    open override func viewDidLoad() {
         super.viewDidLoad()
         eventCollectionView.delegate = self
+    
+    photoArray = [#imageLiteral(resourceName: "al_mezze_colection"),
+    #imageLiteral(resourceName: "kinza_colection"),
+    #imageLiteral(resourceName: "goriachie_perci_govorova"),
+    #imageLiteral(resourceName: "goriachie_perci_chernomorsk"),
+    #imageLiteral(resourceName: "goriachie_perci_koroleva"),
+    #imageLiteral(resourceName: "gnezdo"),
+    #imageLiteral(resourceName: "eleven_dogs"),
+    #imageLiteral(resourceName: "zenith")]
+    print(photoArray.count)
+    
           }
    
     
     //collection view
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MainCollectionViewCell
-        cell.eventImage.imageView?.image = #imageLiteral(resourceName: "photo_actia_exemple")
-                return cell
+        print(indexPath.row)
+        cell.eventImage.imageView?.image = photoArray[indexPath.row]
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return photoArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

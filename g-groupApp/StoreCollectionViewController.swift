@@ -37,23 +37,21 @@ class StoreCollectionViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return photoArray.count / 2
+        return photoArray.count
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 2
+        return 1
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "storecell", for: indexPath) as! StoreCollectionViewCell
-        let a = indexPath.row
-        let b = indexPath.section
-        if (a == 0 && b == 0){
+                if (indexPath.section == 0){
             cell.backButton.isHidden = false
         }
-        cell.storeImage.setBackgroundImage(photoArray[indexPath.section * 2 + indexPath.row], for: .normal)
+        cell.storeImage.setBackgroundImage(photoArray[indexPath.section], for: .normal)
     
         // Configure the cell
     
